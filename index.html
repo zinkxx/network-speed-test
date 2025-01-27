@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internet Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    <select id="language-selector">
+      <option value="en">English</option>
+      <option value="tr">Türkçe</option>
+    </select>
+    <h1 id="title">Internet Speed Test & IP Viewer</h1>
+    <div id="user-info">
+      <p id="ip-address">Loading IP...</p>
+      <p id="location"></p>
+      <p id="isp"></p>
+    </div>
+    <button id="start-test">Start Speed Test</button>
+    <div id="speed-results" class="hidden">
+      <div id="loading-spinner" class="hidden"></div>
+      <p>Download Speed: <span id="download-speed">--</span> Mbps</p>
+      <p>Upload Speed: <span id="upload-speed">--</span> Mbps</p>
+    </div>
+    <h2>Test History</h2>
+    <table id="history-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Download (Mbps)</th>
+          <th>Upload (Mbps)</th>
+          <th>Time</th>
+        </tr>
+      </thead>
+      <tbody>
+       
+      </tbody>
+    </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
